@@ -19,16 +19,41 @@ h1 {
 h2 {
   font-size: 32px;
 }
-p {
+h3,
+p,
+ul {
   font-family: "Montserrat", sans-serif;
+  color: var(--accentcolor);
+}
+h3 {
+  font-size: 24px;
+}
+p,
+ul {
+  font-size: 16px;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+li {
+  padding: 0;
+  text-align: center;
 }
 .hero {
-  padding: 150px 20px;
+  padding: 120px 20px;
   background-image: linear-gradient(
     176deg,
     var(--primarycolor) 80%,
     var(--secondarycolor) calc(80% + 2px)
   );
+}
+.btn-primary {
+  background-color: var(--primarycolor);
+  border: var(--primarycolor);
+  display: block;
+  margin: auto;
+  max-width: 150px;
 }
 @media (max-width: 600px) {
   h1 {
@@ -36,6 +61,6 @@ p {
     line-height: 1.25;
   }
   h2 {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
