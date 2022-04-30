@@ -1,6 +1,26 @@
-h1 {
+body {
+  background-color: #f1f2eb;
+}
+h1,
+h2 {
   font-family: "Poppins", sans-serif;
+  text-align: center;
+  color: white;
+}
+h1 {
+  font-size: 80px;
+}
+h2 {
+  font-size: 40px;
 }
 p {
   font-family: "Montserrat", sans-serif;
+}
+.hero {
+  padding: 150px 20px;
+  background-image: linear-gradient(
+    176deg,
+    #1c7293 80%,
+    #f1f2eb calc(80% + 2px)
+  );
 }
