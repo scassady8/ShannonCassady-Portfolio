@@ -10,11 +10,6 @@ body {
 h1,
 h2 {
   font-family: "Poppins", sans-serif;
-  color: white;
-}
-h1 {
-  font-size: 80px;
-  line-height: 1.5;
 }
 h2 {
   font-size: 32px;
@@ -47,6 +42,24 @@ li {
     var(--primarycolor) 80%,
     var(--secondarycolor) calc(80% + 2px)
   );
+}
+.content {
+  padding: 100px 20px;
+}
+.hero h1,
+.hero h2 {
+  color: white;
+}
+.content h1,
+.content h2 {
+  color: var(--primarycolor);
+}
+.hero h1 {
+  font-size: 80px;
+  line-height: 1.5;
+}
+.content h1 {
+  font-size: 60px;
 }
 .btn-primary {
   background-color: var(--primarycolor);
