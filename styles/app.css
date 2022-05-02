@@ -15,6 +15,7 @@ h2 {
   font-size: 32px;
 }
 h3,
+h4,
 p,
 ul {
   font-family: "Montserrat", sans-serif;
@@ -50,13 +51,13 @@ li {
 .hero h2 {
   color: white;
 }
-.content h1,
-.content h2 {
-  color: var(--primarycolor);
-}
 .hero h1 {
   font-size: 80px;
   line-height: 1.5;
+}
+.content h1,
+.content h2 {
+  color: var(--primarycolor);
 }
 .content h1 {
   font-size: 60px;
@@ -67,6 +68,16 @@ li {
   display: block;
   margin: auto;
   max-width: 150px;
+}
+.contact a {
+  font-family: "Montserrat", sans-serif;
+  color: var(--primarycolor);
+  text-decoration: none;
+  font-size: 18px;
+}
+.contact a:hover {
+  color: var(--primarycolor);
+  text-decoration: underline;
 }
 @media (max-width: 600px) {
   h1 {
