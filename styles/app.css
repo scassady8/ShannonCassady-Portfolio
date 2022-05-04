@@ -144,4 +144,8 @@ footer .social-links a:hover {
       var(--secondarycolor) calc(80% + 2px)
     );
   }
+  footer .work-inquiry {
+    padding: 30px;
+    margin: 20px;
+  }
 }
