@@ -70,10 +70,16 @@ li {
 }
 .btn-primary {
   background-color: var(--primarycolor);
-  border: var(--primarycolor);
+  border: 1px solid var(--primarycolor);
   display: block;
   margin: auto;
-  max-width: 150px;
+  max-width: 200px;
+  transition: all 100ms ease-in-out;
+}
+.btn-primary:hover {
+  background-color: var(--secondarycolor);
+  color: var(--primarycolor);
+  border: 1px solid var(--primarycolor);
 }
 .contact a {
   font-family: "Montserrat", sans-serif;
@@ -85,6 +91,44 @@ li {
   color: var(--primarycolor);
   text-decoration: underline;
 }
+footer .work-inquiry {
+  background-color: rgba(185, 227, 198, 0.5);
+  border-radius: 10px;
+  padding: 30px 100px;
+  margin: 60px;
+}
+footer .social-links a {
+  color: var(--primarycolor);
+  background-color: var(--tertiarycolor);
+  margin: 0 20px;
+  border-radius: 50%;
+  padding: 10px 14px;
+  font-size: 20px;
+  transition: all 100ms ease-in-out;
+}
+footer .social-links a:hover {
+  color: var(--tertiarycolor);
+  background-color: var(--primarycolor);
+}
+.email {
+  color: var(--primarycolor);
+  font-size: 22px;
+  margin: 10px 0px;
+  text-decoration: none;
+}
+.email:hover {
+  color: var(--primarycolor);
+  text-decoration: underline;
+}
+.coder a {
+  color: var(--primarycolor);
+  text-decoration: none;
+}
+.coder a:hover {
+  color: var(--primarycolor);
+  text-decoration: underline;
+}
+
 @media (max-width: 600px) {
   h1 {
     font-size: 50px;
