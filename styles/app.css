@@ -68,13 +68,50 @@ li {
 .content h2 {
   font-size: 30px;
 }
+.grid-2-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 40px;
+}
+.featured-project {
+  margin: 50px 0;
+}
+.featured-project-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.featured-project-image {
+  border-radius: 3px;
+  width: 100%;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, .3);
+}
+.featured-project-btn {
+  background-color: var(--primarycolor);
+  border: 1px solid var(--primarycolor);
+  color: #FFF;
+  display: inline-block;
+  letter-spacing: 1px;
+  max-width: 200px;
+  padding: .5rem 2rem;
+  transition: all 100ms ease-in-out;
+  text-transform: capitalize;
+}
+.featured-project-btn:hover {
+  background-color: var(--secondarycolor);
+  color: var(--primarycolor);
+  border: 1px solid var(--primarycolor);
+}
 .btn-primary {
   background-color: var(--primarycolor);
   border: 1px solid var(--primarycolor);
   display: block;
+  letter-spacing: 1px;
   margin: auto;
   max-width: 200px;
   transition: all 100ms ease-in-out;
+  text-transform: capitalize;
 }
 .btn-primary:hover {
   background-color: var(--secondarycolor);
@@ -92,11 +129,6 @@ li {
   text-decoration: underline;
 }
 .img-thumbnail {
-  max-height: 300px;
-  display: block;
-  margin: 0 auto;
-}
-.img-fluid {
   max-height: 400px;
   display: block;
   margin: 0 auto;
@@ -138,13 +170,12 @@ footer .social-links a:hover {
   color: var(--primarycolor);
   text-decoration: underline;
 }
-
-@media (max-width: 600px) {
-  h1 {
-    font-size: 50px;
+@media (max-width: 576px) {
+  .hero h1 {
+    font-size: 60px;
   }
   .hero h2 {
-    font-size: 24px;
+    font-size: 22px;
   }
   .hero {
     padding: 40px 20px 80px;
@@ -154,8 +185,11 @@ footer .social-links a:hover {
       var(--secondarycolor) calc(80% + 2px)
     );
   }
+  footer {
+    margin: 0 10px;
+  }
   footer .work-inquiry {
     padding: 30px;
-    margin: 20px;
+    margin: 20px 10px;
   }
 }
