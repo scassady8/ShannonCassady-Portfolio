@@ -16,25 +16,15 @@ h2 {
 }
 h3,
 h4,
-p,
-ul {
+p {
   font-family: "Montserrat", sans-serif;
   color: var(--accentcolor);
 }
 h3 {
   font-size: 24px;
 }
-p,
-ul {
+p {
   font-size: 16px;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  padding: 0;
-  text-align: center;
 }
 .logo {
   max-width: 60px;
@@ -47,9 +37,6 @@ li {
     var(--secondarycolor) calc(70% + 2px)
   );
 }
-.content {
-  padding: 60px 20px 20px;
-}
 .hero h1,
 .hero h2 {
   color: white;
@@ -57,6 +44,9 @@ li {
 .hero h1 {
   font-size: 80px;
   line-height: 1.25;
+}
+.content {
+  padding: 60px 20px 20px;
 }
 .content h1,
 .content h2 {
@@ -87,36 +77,27 @@ li {
   width: 100%;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, .3);
 }
-.featured-project-btn {
+.btn {
   background-color: var(--primarycolor);
   border: 1px solid var(--primarycolor);
-  color: #FFF;
-  display: inline-block;
   letter-spacing: 1px;
   max-width: 200px;
   padding: .5rem 2rem;
   transition: all 100ms ease-in-out;
   text-transform: capitalize;
 }
-.featured-project-btn:hover {
+.btn:hover {
   background-color: var(--secondarycolor);
   color: var(--primarycolor);
   border: 1px solid var(--primarycolor);
+}
+.featured-project-btn { 
+  color: #FFF;
+  display: inline-block;
 }
 .btn-primary {
-  background-color: var(--primarycolor);
-  border: 1px solid var(--primarycolor);
   display: block;
-  letter-spacing: 1px;
   margin: auto;
-  max-width: 200px;
-  transition: all 100ms ease-in-out;
-  text-transform: capitalize;
-}
-.btn-primary:hover {
-  background-color: var(--secondarycolor);
-  color: var(--primarycolor);
-  border: 1px solid var(--primarycolor);
 }
 .contact a {
   font-family: "Montserrat", sans-serif;
